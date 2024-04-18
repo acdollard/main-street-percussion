@@ -11,6 +11,10 @@ function msp_files()
         get_theme_file_uri('/build/index.css')
     );
     wp_enqueue_style('msp_extra_styles_2', get_theme_file_uri('/index.css'));
+    wp_enqueue_style(
+        'msp_extra_styles_3',
+        get_theme_file_uri('/build/output.css')
+    );
 }
 
 add_action('wp_enqueue_scripts', 'msp_files');
